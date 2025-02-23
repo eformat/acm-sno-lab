@@ -1,3 +1,4 @@
 ---
 resources:
   - policy-hypershift-addon.yaml
+  - policy-ingress-controller.yaml

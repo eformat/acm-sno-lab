@@ -1011,13 +1011,13 @@ This could be streamlined some more - but opting to not prune in ArgoCD for now 
 - update worker to reboot from cdrom
 
 ```bash
-virsh edit hcp-3
+virsh edit worker-3
 # change this:
 # <boot dev='fd'/>
 # to this:
 # <boot dev='cdrom'/>
-virsh destroy hcp-3
-virsh start hcp-3
+virsh destroy worker-3
+virsh start worker-3
 ```
 
 Host should become `Available` again in Inventory.
